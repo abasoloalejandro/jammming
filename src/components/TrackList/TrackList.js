@@ -21,27 +21,3 @@ const TrackList = (props) => {
 }
 
 export default TrackList;
-
-
-/*
-class TrackList extends Component {
-  constructor(props) {
-    super(props);
-    if (props.tracks.length) {
-        return (
-            <div className="TrackList">
-              {props.tracks.map(track =>
-                <Track track={track} key={track.id} onAdd={props.onAdd} onRemove={props.onRemove} isRemoval={props.isRemoval} />
-              )}
-            </div>
-        )
-    } else {
-        return (
-          <div className="TrackList">
-          </div>
-        )
-    }
-}
-
-export default TrackList;
-*/

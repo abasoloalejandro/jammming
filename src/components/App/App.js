@@ -74,19 +74,6 @@ class App extends Component {
     })
   }
 
-/*code obtained from auth index for Authorization - not working
-
-  getHashParams() {
-    var hashParams = {};
-    var e, r = /([^&;=]+)=?([^&;]*)/g,
-        q = window.location.hash.substring(1);
-    while ( e = r.exec(q)) {
-       hashParams[e[1]] = decodeURIComponent(e[2]);
-    }
-    return hashParams;
-  }
-*/
-
   render() {
     const { searchResults, playlistName, playlistTracks } = this.state;
     return (
@@ -108,7 +95,6 @@ class App extends Component {
       </div>
     );
   }
-
 }
 
 export default App;
